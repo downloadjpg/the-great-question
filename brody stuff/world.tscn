@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cyb5rt2bgkgwf"]
+
+[ext_resource type="PackedScene" uid="uid://bvp6qotnnap3o" path="res://brody stuff/player.tscn" id="1_3w83v"]
+[ext_resource type="Script" path="res://brody stuff/player.gd" id="2_0u7lo"]
+[ext_resource type="PackedScene" uid="uid://cb7qh6o5eyrxv" path="res://brody stuff/floor.tscn" id="2_gbn1y"]
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_3w83v")]
+position = Vector2(320, 264)
+script = ExtResource("2_0u7lo")
+
+[node name="Floor" parent="." instance=ExtResource("2_gbn1y")]
+position = Vector2(336, 480)
+
+[node name="Floor2" parent="." instance=ExtResource("2_gbn1y")]
+position = Vector2(832, 384)
+
+[node name="Floor3" parent="." instance=ExtResource("2_gbn1y")]
+position = Vector2(600, 440)
